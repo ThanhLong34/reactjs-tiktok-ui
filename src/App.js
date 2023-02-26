@@ -4,6 +4,8 @@ import { publicRoutes } from '@/routes';
 // import DefaultLayout from '@/layouts';
 import { DefaultLayout } from '@/layouts';
 
+// console.log(process.env);
+
 function App() {
    return (
       <Router>

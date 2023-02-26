@@ -7,6 +7,7 @@ function Home() {
          <Link to={'/profile/1'}>Profile 1</Link>
          <Link to={'/profile/2'}>Profile 2</Link>
          <Link to={routes.profile}>Profile 3</Link>
+         <button>{['he', ' 23', 'llo']}</button>
       </h2>
    );
 }

@@ -49,10 +49,13 @@ function Header() {
                      >
                         <PopperWrapper>
                            <h4 className={cx('search-title')}>Accounts</h4>
-                           <AccountItem />
-                           <AccountItem />
-                           <AccountItem />
-                           <AccountItem />
+                           <AccountItem
+                              data={{
+                                 avatar: 'image',
+                                 name: 'abc',
+                                 username: 'abc@123',
+                              }}
+                           />
                         </PopperWrapper>
                      </div>
                   )}

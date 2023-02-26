@@ -1,11 +1,15 @@
+import PropTypes from 'prop-types';
+import classNames from 'classnames/bind';
+
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
 
 const cx = classNames.bind(styles);
 
-function AccountItem() {
+function AccountItem({ data }) {
+   console.log(data);
+
    return (
       <div className={cx('wrapper')}>
          <img
@@ -26,5 +30,9 @@ function AccountItem() {
       </div>
    );
 }
+
+AccountItem.propTypes = {
+   data: PropTypes.object,
+};
 
 export default AccountItem;
