@@ -1,30 +1,38 @@
+import { routes } from '@/configs';
+
 // Layouts
-import { HeaderOnly } from '@/components/Layout';
+import { HeaderOnly } from '@/layouts';
 
 // Pages
 import HomePage from '@/pages/Home';
 import FollowingPage from '@/pages/Following';
 import UploadPage from '@/pages/Upload';
 import SearchPage from '@/pages/Search';
+import ProfilePage from '@/pages/Profile';
 
 // Routes không cần đăng nhập vẫn truy cập được
 const publicRoutes = [
    {
-      path: '/',
+      path: routes.home,
       component: HomePage,
    },
    {
-      path: '/following',
+      path: routes.following,
       component: FollowingPage,
    },
    {
-      path: '/upload',
+      path: routes.upload,
       component: UploadPage,
       layout: HeaderOnly,
    },
    {
-      path: '/search',
+      path: routes.search,
       component: SearchPage,
+      layout: null,
+   },
+   {
+      path: routes.profile,
+      component: ProfilePage,
       layout: null,
    },
 ];
